@@ -12,14 +12,16 @@ inputs:
       A source of a CURRENT_VERSION, might be:
       - file
       - variable
-    required: true
+    required: false
     default: 'variable'
   version:
     description: 'A version variable for version source'
     required: false
+    default: 'variable'
   version-file:
     description: 'A path to a file with which holds a version'
     required: false
+    default: 'variable'
   version-file-extraction-pattern:
     description: |
       A RegEx to extract version from a version-source file. Should either match a full version, or return it as the
